@@ -63,37 +63,18 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/dannnylo/rtesseract"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.4.8"
+  s.rubygems_version = "2.4.9"
   s.summary = "Ruby library for working with the Tesseract OCR."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<nokogiri>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<rdoc>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, [">= 0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 2.1.1"])
-      s.add_development_dependency(%q<simplecov>, [">= 0"])
-      s.add_development_dependency(%q<coveralls>, [">= 0"])
-    else
-      s.add_dependency(%q<nokogiri>, [">= 0"])
-      s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<rdoc>, [">= 0"])
-      s.add_dependency(%q<bundler>, [">= 0"])
-      s.add_dependency(%q<jeweler>, ["~> 2.1.1"])
-      s.add_dependency(%q<simplecov>, [">= 0"])
-      s.add_dependency(%q<coveralls>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<nokogiri>, [">= 0"])
-    s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<rdoc>, [">= 0"])
-    s.add_dependency(%q<bundler>, [">= 0"])
-    s.add_dependency(%q<jeweler>, ["~> 2.1.1"])
-    s.add_dependency(%q<simplecov>, [">= 0"])
-    s.add_dependency(%q<coveralls>, [">= 0"])
+    s.add_dependency(%q<nokogiri>, [">= 1.6.8"])
+    s.add_dependency(%q<rspec>, [">= 3.5.0"])
+    s.add_dependency(%q<rdoc>, [">= 5.0"])
+    s.add_dependency(%q<bundler>, [">= 1.13.0"])
+    s.add_dependency(%q<jeweler>, ["~> 2.1.2"])
+    s.add_dependency(%q<simplecov>, [">= 0.12"])
+    s.add_dependency(%q<coveralls>, [">= 0.8.18"])
   end
 end
-
